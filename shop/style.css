@@ -1087,7 +1087,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 17px;
+    margin-left: 16px;
+    margin-right: 16px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .cart_but {
     margin-top: 62px;
@@ -1100,6 +1104,104 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartTotal {
+    margin-top: 39px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart_card {
+    min-width: 300px;
+    height: 188px;
+  }
+  .cart_card h4 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-bottom: 25px;
+  }
+  .cart_card p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #575757;
+    padding-bottom: 6px;
+  }
+  .cart_card p span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart__content_left {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .cart__content_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin: 0 auto;
+  }
+  .cartAdress {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .cartTotal {
+    margin-top: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .cart__content {
+    margin-bottom: 96px;
+  }
+  .cartForm button {
+    margin-bottom: 48px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 107px;
+  }
+  .cartCardWrap a img {
+    width: 9px;
+    height: 11px;
+    right: 12px;
+    top: 17px;
+  }
+  .cartCardWrap {
+    padding-top: 13px;
+  }
+  .cart__content {
+    margin-top: 39px;
+  }
+  .cart_but {
+    margin-top: 30px;
+  }
+  .cart_but button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px 18px;
   }
 }
 

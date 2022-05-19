@@ -1073,6 +1073,144 @@
     }
 }
 
+// Registration
+
+.registration {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    justify-content: space-between;
+}
+
+.registrationForm h4 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+.registrationForm p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 13px;
+    color: #000000;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 33px;
+}
+
+.registrationForm span {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    display: block;
+    max-width: 360px;
+}
+
+.registrationForm input {
+    text-indent: 17px;
+    padding: 0;
+    width: 360px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid #A4A4A4;
+}
+
+.registrationForm input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
+
+.registrationForm button {
+    background: #F16D7F;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 16px 29px;
+}
+
+.registrationForm button img {
+    padding-left: 20px;
+}
+
+.registrationLoyalty {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 128px;
+}
+
+.registrationLoyalty div {
+    padding-bottom: 16px;
+    background: url(img/registration/checkmark.svg);
+    background-repeat: no-repeat;
+    padding-left: 43px;
+    background-position: left;
+}
+
+.registrationLoyalty p {
+    padding-bottom: 22px;
+}
+
+// Registration для планшета
+
+@media (max-width:1024px) {
+
+    .registration {
+        margin-left: 16px;
+        margin-right: 16px;
+
+        &Loyalty {
+            margin-left: 22px;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+}
+
+// Registration для мобилки
+
+@media (max-width: 768px) {
+
+    .registration {
+        flex-direction: column;
+        margin-left: 8px;
+        margin-right: 8px;
+
+    }
+
+    .registrationLeft {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .registrationLoyalty {
+        margin: 0;
+    }
+}
+
 // Для планшета.
 
 @media (max-width: 1024px) {
